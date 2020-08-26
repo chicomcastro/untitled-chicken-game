@@ -5,26 +5,26 @@ _Untitled Chicken Game_ is a story-driven-management game where the protagonist 
 
 ## Story
 
-Um menino chamado [nome] ganha de presente um pintinho. Após algumas semanas/meses brincando com esse animal, o menino desenvolve uma grande amizade com o pintinho e o considera seu melhor amigo. Nesse mesmo tempo, o pintinho torna-se um galo e em uma distração do menino, o animal acaba se separando e sendo encontrado por fiscais do [restaurante de frango frito], que pegam o galo e levam ele para fazer frango frito. O menino, muito triste pela perda de seu melhor amigo, jura vingança ao [restaurante de frango frito]. O menino então crescido, começa a trabalhar no [restaurante de frango frito], com o objetivo de atingir um alto cargo e com isso falir a rede de restaurantes. Após alguns anos o [nome] se torna sócio do restaurante e agora com grandes poderes e influências dentro do [restaurante de frango frito], tem a chance de falir a marca.
+A boy called [name] earns a chick as a gift. After some weeks/months playing with this animal, the boy develops a great frindship with the chick and considers him as his best friend. At this time, the chick becomes a rooster and in a boy's distraction, the animal ends up separating from the boy and being found by insperctor from [fried chicken restaurant], that take him to make fried chicken. The boy, very sad because of the loss of his friend, swear revenge on [fried chicken restaurant]. The boy when grown up, starts to work in [fried chicken restaurant], with the objective of reach a high role and, with it, bankrupt the restaurant chain. After some years, [name] becomes a 
+restaurant's partner and now with great powers and influences inside the [fried chicken restaurant], has the chance to bankrupt the brand.
 
 ## Characters
 
-Personagem principal(menino/adulto)
-Pintinho/galo
-Gerente 
-Dono da rede de restaurantes
-Garçom
-Funcionario
-Cozinheiro
+Main character(boy/adult)
+Chick/rooster
+Manager 
+Restaurant chain's owner
+Waiter
+Employee
+Cooker
 
 ## Gameplay
 
-Minigame inicial com o pintinho(ainda será decidido como vai funcionar)
-Gerenciamento do restaurante(ainda será decidido como vai funcionar)
+Restaurant's management(still to be decided)
 
 ## Art
 
-
+It is a cartoon style, like Neko Atsume
 
 ## Sound and Music
 

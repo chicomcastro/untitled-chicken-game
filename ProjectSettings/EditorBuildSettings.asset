@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/InitialDialogue.unity
     guid: ed11918d56a018b4bb117a4d362109d7
   - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: cab8581e3f5ab4de584a8db2fd6be60a
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

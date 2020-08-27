@@ -1,36 +1,47 @@
 # Untitled Chicken Game
 
 ## Introduction
-_Untitled Chicken Game_ is a story-driven-management game where the protagonist wants to destroy a fried-chicken-fast-food chain;
+- *Untitled Chicken Game* is a *tamagotchi-idle-arcade-like* game where your objective is to din a way that your chicken doesn't turn into nuggets;
 
 ## Story
 
-A boy called [name] earns a chick as a gift. After some weeks/months playing with this animal, the boy develops a great frindship with the chick and considers him as his best friend. At this time, the chick becomes a rooster and in a boy's distraction, the animal ends up separating from the boy and being found by insperctor from [fried chicken restaurant], that take him to make fried chicken. The boy, very sad because of the loss of his friend, swear revenge on [fried chicken restaurant]. The boy when grown up, starts to work in [fried chicken restaurant], with the objective of reach a high role and, with it, bankrupt the restaurant chain. After some years, [name] becomes a 
-restaurant's partner and now with great powers and influences inside the [fried chicken restaurant], has the chance to bankrupt the brand.
+The boy is presented with a chick as a gift. He starts to treat the Chicken like a lovely pet and spends most of the time of the day taking care of the Chicken.
+
+The Chicken starts to grow and become more strong and healthier (that's what the Boy thinks), when suddently his neighbour (The Watcher, because he watches the chick from the window) robs the Chicken and turns into nuggets. 
+
+Is there way that the Chicken survives? The Boy will have to find out 🤔
 
 ## Characters
 
-Main character(boy/adult)
-Chick/rooster
-Manager 
-Restaurant chain's owner
-Waiter
-Employee
-Cooker
+- Boy: the protagonist and the only playable character. His motive is raise a chicken that becomes not instresting to the Watcher;
+- Chicken: raised by the Boy, he drinks, eats and exercise;
+- Watcher: he is the villain of the game and it is the Boy's neighbour. He can be seen in the window, watching the chicken until he robs and turn it into nuggets. There's a way that the Watcher doesn't robs your chicken, doing this unlocks the secret ending;
 
 ## Gameplay
+- *Untitled Chicken Game* is a *tamagotchi-idle-arcade-like* game;
+- Objectives
+  - Your main objective is make your chicken as strong and fat as possible, when the the time is out your chicken status results in a X number of nuggets, that's the final score. Everytime that you don't reveal the secret ending, you lose;
+  - The game has a secret ending where the chicken doesn't turn in nuggets. This ending is unlocked when your score (chicken strenght and weight points) is below a certain number, so the Watcher doesn't have interest in your chicken anymore;
 
-Restaurant's management(still to be decided)
+- Gameplay Loop
+  - The gameplay loop is around 3-5 minutes;
+  - Everytime the player finishes the game, a cutscene is unlocked, revealing a clue to the secret ending; 
+  - The cutscenes doesn't have dialog, so understanding what's going in the cinematic is part of the puzzle to unlock the secret ending;
+  - The chicken has some activities to do in his bedroom:
+    - Drink;
+    - Eat;
+    - Exercise;
+    - Sleep;
 
 ## Art
 
-It is a cartoon style, like Neko Atsume
+- The game has a cartoon style look;
+- The Chicken has two forms:
+  - chick form;
+  - adult form;
+- There's a animation for each one of the activities;
 
 ## Sound and Music
 
-
-The soundtrack is inspired by mix of country music and chiptune (?). 
-The desktop management gameplay has a calm country song (chill vibes);
-Cutscenes has more dramatic/story emphasis music;
-The ChickenOS startup is a morning chicken cackle, and notification sounds mimics chicken noises;
-Inspirations are in the #music-and-sfx channel;
+- Since the game is idle/tamagotvhi like, the soundtrack is inspired by chill and lofi music;
+- Cutscenes has more dramatic/story emphasis music;

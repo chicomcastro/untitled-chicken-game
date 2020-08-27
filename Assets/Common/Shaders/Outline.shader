@@ -4,7 +4,7 @@
     {
         _MainTex("Texture", 2D) = "white" {}
         _OutlineColor("Outline Color", Color) = (1,1,1,1)
-        _OutlineThickness("Outline Thickness", Range(0,30)) = 0
+        _OutlineThickness("Outline Thickness", Range(0, 100)) = 0
         _ShouldOutline("Should Outline", Range(0, 1)) = 0
     }
         SubShader

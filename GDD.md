@@ -25,7 +25,8 @@ Is there way that the Chicken survives? The Boy will have to find out 🤔
 
 - Gameplay Loop
   - The gameplay loop is around 3-5 minutes;
-  - Everytime the player finishes the game, a cutscene is unlocked, revealing a clue to the secret ending; 
+  - Each as a minute passes, user earns coins and chicken grows in size;
+  - Everytime the player finishes the game (by the end of five minutes, in the given demo), a cutscene is unlocked, revealing a clue to the secret ending; 
   - The cutscenes doesn't have dialog, so understanding what's going in the cinematic is part of the puzzle to unlock the secret ending;
   - The chicken has some activities to do in his bedroom:
     - Drink;
@@ -43,5 +44,5 @@ Is there way that the Chicken survives? The Boy will have to find out 🤔
 
 ## Sound and Music
 
-- Since the game is idle/tamagotvhi like, the soundtrack is inspired by chill and lofi music;
+- Since the game is idle/tamagotchi like, the soundtrack is inspired by chill and lofi music;
 - Cutscenes has more dramatic/story emphasis music;

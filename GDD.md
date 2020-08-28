@@ -1,7 +1,7 @@
 # Untitled Chicken Game
 
 ## Introduction
-- *Untitled Chicken Game* is a *tamagotchi-idle-arcade-like* game where your objective is to din a way that your chicken doesn't turn into nuggets;
+- *Untitled Chicken Game* is a *tamagotchi-idle-arcade-like* game in which your objective is to din a way that your chicken doesn't get cut up into nuggets;
 
 ## Story
 
@@ -13,9 +13,9 @@ Is there way that the Chicken survives? The Boy will have to find out 🤔
 
 ## Characters
 
-- Boy: the protagonist and the only playable character. His motive is raise a chicken that becomes not instresting to the Watcher;
+- Boy: the protagonist and the only playable character. His goal is to raise a chicken that becomes not instresting to the Watcher;
 - Chicken: raised by the Boy, he drinks, eats and exercise;
-- Watcher: he is the villain of the game and it is the Boy's neighbour. He can be seen in the window, watching the chicken until he robs and turn it into nuggets. There's a way that the Watcher doesn't robs your chicken, doing this unlocks the secret ending;
+- Watcher: he is the villain of the game and it is the Boy's neighbour. He can be seen in the window, watching the chicken until he robs it and turns it into nuggets. There's a way that the Watcher doesn't rob your chicken, and by doing this the player unlocks the secret ending;
 
 ## Gameplay
 - *Untitled Chicken Game* is a *tamagotchi-idle-arcade-like* game;

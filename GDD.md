@@ -45,4 +45,4 @@ Is there way that the Chicken survives? The Boy will have to find out 🤔
 ## Sound and Music
 
 - Since the game is idle/tamagotchi like, the soundtrack is inspired by chill and lofi music;
-- Cutscenes has more dramatic/story emphasis music;
+- Cutscenes have more dramatic/story emphasis music;

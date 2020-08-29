@@ -5,6 +5,7 @@ using UnityEngine;
 public class Highlight : MonoBehaviour
 {
     Material material;
+    private static readonly int ShouldOutline = Shader.PropertyToID("_ShouldOutline");
 
     private void Start()
     {
@@ -13,11 +14,11 @@ public class Highlight : MonoBehaviour
 
     private void OnMouseOver()
     {
-        material.SetFloat("_ShouldOutline", 1);
+        material.SetFloat(ShouldOutline, 1);
     }
 
     private void OnMouseExit()
     {
-        material.SetFloat("_ShouldOutline", 0);
+        material.SetFloat(ShouldOutline, 0);
     }
 }

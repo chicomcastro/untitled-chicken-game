@@ -23,6 +23,8 @@
         <e p="InitialMenuController.cs" t="Include" />
         <e p="MainScene" t="Include">
           <e p="Scripts" t="Include">
+            <e p="NeedsController.cs" t="Include" />
+            <e p="NeedsDisplay.cs" t="Include" />
             <e p="ShopButtonAnimationController.cs" t="Include" />
             <e p="ShopController.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />

@@ -11,6 +11,11 @@ public class WaterBowlController : MonoBehaviour
 
     private void OnMouseUp()
     {
+        ToggleState();
+    }
+
+    public void ToggleState()
+    {
         var stateSet = _chickController.SetState(_isDrinkingWater ? ChickState.Idle : ChickState.DrinkingWater);
         if (!stateSet) return;
 

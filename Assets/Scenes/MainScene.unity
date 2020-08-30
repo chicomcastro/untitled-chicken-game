@@ -211,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580195212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27, y: -2.597308, z: -1}
+  m_LocalPosition: {x: -0.27, y: -2.597308, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360953805}
@@ -241,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769412269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -1.2, z: -28.218729}
+  m_LocalPosition: {x: -0.18, y: -1.1, z: -28.218729}
   m_LocalScale: {x: 4.863776, y: 4.863776, z: 4.863776}
   m_Children: []
   m_Father: {fileID: 1383461630}
@@ -422,6 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360953805}
+  - component: {fileID: 1360953806}
   m_Layer: 0
   m_Name: RootObject
   m_TagString: Untagged
@@ -450,6 +451,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360953806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360953804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46968f7d9f76a4335b4932e0edb5592b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chickController: {fileID: 1995536765}
+  _waterBowlController: {fileID: 1066437100}
+  _exerciseWheelController: {fileID: 1383461632}
 --- !u!1 &1381826858
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,8 +541,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381826858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.31241727, y: -0.29730776, z: 4.6734614}
-  m_LocalScale: {x: 1.033381, y: 1.0889722, z: 1}
+  m_LocalPosition: {x: -0.506, y: -0.34, z: 4.6734614}
+  m_LocalScale: {x: 1.1406771, y: 1.0804988, z: 1}
   m_Children: []
   m_Father: {fileID: 1360953805}
   m_RootOrder: 4
@@ -650,8 +666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _chickController: {fileID: 1995536765}
-  _idlePosition: {fileID: 580195212}
-  _wheelPosition: {fileID: 769412269}
 --- !u!114 &1383461633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,6 +714,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1871901142}
   - component: {fileID: 1871901143}
+  - component: {fileID: 1871901145}
+  - component: {fileID: 1871901144}
+  - component: {fileID: 1871901146}
   m_Layer: 0
   m_Name: chick_bed
   m_TagString: Untagged
@@ -739,7 +756,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b61a3a594c9cd4304a7b549046cad462, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -771,6 +788,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1871901144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871901141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d858c392fa284d38b650bcd46537cce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chickController: {fileID: 1995536765}
+  _gameController: {fileID: 1360953806}
+--- !u!114 &1871901145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871901141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e108484c010f2d84fa605f8bdb027fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1871901146
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871901141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.81, y: 2.17}
+    newSize: {x: 3.81, y: 2.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.81, y: 2.17}
+  m_EdgeRadius: 0
 --- !u!1 &1995536761
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995536761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26999998, y: -2.597308, z: -1}
+  m_LocalPosition: {x: -0.26999998, y: -2.597308, z: -2}
   m_LocalScale: {x: 0.60218525, y: 0.60218525, z: 0.60218525}
   m_Children: []
   m_Father: {fileID: 1360953805}
@@ -889,6 +958,8 @@ MonoBehaviour:
   _idlePosition: {fileID: 580195212}
   _waterPosition: {fileID: 1253552846}
   _wheelPosition: {fileID: 769412269}
+  _roosterAnimatorController: {fileID: 9100000, guid: 7d1d93276275b4e97a669cd1aee50069,
+    type: 2}
 --- !u!114 &1995536766
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,8 +11,6 @@ public class ExerciseWheelController : MonoBehaviour
     private static readonly int IsExercising = Animator.StringToHash("isExercising");
 
     [SerializeField] private ChickController _chickController;
-    [SerializeField] private GameObject _idlePosition;
-    [SerializeField] private GameObject _wheelPosition;
 
     void Start()
     {
@@ -20,6 +18,11 @@ public class ExerciseWheelController : MonoBehaviour
     }
 
     private void OnMouseUp()
+    {
+        ToggleState();
+    }
+
+    public void ToggleState()
     {
         if (_animator == null)
         {

@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 1008312555}
   m_Layer: 0
   m_Name: FoodBowl
-  m_TagString: Untagged
+  m_TagString: FoodBowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 1066437100}
   m_Layer: 0
   m_Name: WaterBowl
-  m_TagString: Untagged
+  m_TagString: WaterBowl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 1383461634}
   m_Layer: 0
   m_Name: Exercise Wheel
-  m_TagString: Untagged
+  m_TagString: Wheel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 1871901146}
   m_Layer: 0
   m_Name: chick_bed
-  m_TagString: Untagged
+  m_TagString: Couch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

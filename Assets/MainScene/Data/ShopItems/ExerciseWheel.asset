@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0498d776d721944f883fc45efe30ea9, type: 3}
-  m_Name: RunningWheel
+  m_Name: ExerciseWheel
   m_EditorClassIdentifier: 
-  Name: 
-  NewSprite: {fileID: 0}
-  Price: 0
-  Tag: 
+  Name: Hot Wheel
+  NewSprite: {fileID: -5355376474382105133, guid: 18e69e056317d4deca51b18460bb3ce7,
+    type: 3}
+  NewAnimation: {fileID: 0}
+  Price: 32
+  Tag: ExerciseWheel

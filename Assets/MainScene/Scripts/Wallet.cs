@@ -14,6 +14,7 @@ public class Wallet : MonoBehaviour
     private void Awake()
     {
         _amount = _initialAmount;
+        StartCoroutine(StartDefaultIncome());
     }
 
     public bool TryToBuy(ShopItemData item)
@@ -29,5 +30,15 @@ public class Wallet : MonoBehaviour
     {
         _amount -= value;
         OnAmountChange?.Invoke(_amount);
+    }
+
+    private IEnumerator StartDefaultIncome()
+    {
+        while (true)
+        {
+            _amount++;
+            OnAmountChange?.Invoke(_amount);
+            yield return new WaitForSeconds(1);
+        }
     }
 }

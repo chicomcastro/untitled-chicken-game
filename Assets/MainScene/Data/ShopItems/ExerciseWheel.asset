@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ExerciseWheel
   m_EditorClassIdentifier: 
   Name: Hot Wheel
-  NewSprite: {fileID: -5355376474382105133, guid: 18e69e056317d4deca51b18460bb3ce7,
+  NewSprite: {fileID: 1884637377053919198, guid: 136b6254db73d4842b423d0e695be407,
     type: 3}
-  NewAnimation: {fileID: 0}
+  NewAnimation: {fileID: 9100000, guid: 01db846659152405490a982cdd4658e3, type: 2}
   Price: 32
-  Tag: ExerciseWheel
+  Tag: Wheel

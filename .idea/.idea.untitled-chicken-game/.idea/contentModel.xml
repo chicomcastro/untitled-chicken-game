@@ -15,9 +15,11 @@
             <e p="Outline.shader" t="Include" />
           </e>
         </e>
+        <e p="CutsceneController.cs" t="Include" />
         <e p="DataHolder.cs" t="Include" />
         <e p="FoodBowlController.cs" t="Include" />
         <e p="GameController.cs" t="Include" />
+        <e p="InitialMenuController.cs" t="Include" />
         <e p="MainScene" t="Include">
           <e p="Scripts" t="Include">
             <e p="ShopButtonAnimationController.cs" t="Include" />
@@ -28,14 +30,15 @@
             <e p="WalletDisplay.cs" t="Include" />
           </e>
         </e>
+        <e p="ScenesManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ChickController.cs" t="Include" />
           <e p="ExerciseWheelController.cs" t="Include" />
-          <e p="InitialMenu.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="ChickState.cs" t="Include" />
           </e>
         </e>
+        <e p="SoundManager.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

@@ -16,7 +16,16 @@ public class Wallet : MonoBehaviour
         _amount = _initialAmount;
     }
 
-    public void ProcessPurchase(int value)
+    public bool TryToBuy(ShopItemData item)
+    {
+        if (_amount < item.Price) return false;
+
+        item.ApplyEffect();
+        ProcessPurchase(item.Price);
+        return true;
+    }
+
+    private void ProcessPurchase(int value)
     {
         _amount -= value;
         OnAmountChange?.Invoke(_amount);

@@ -22,7 +22,7 @@ public class ShopItem : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (_item.TryToBuy(_wallet))
+        if (_wallet.TryToBuy(_item))
             gameObject.SetActive(false);
     }
 }

@@ -6,12 +6,10 @@ using UnityEngine;
 
 public class ChickBedController : MonoBehaviour
 {
-    [SerializeField] private ChickController _chickController;
     [SerializeField] private GameController _gameController;
 
     private void OnMouseUp()
     {
-        _gameController.ResetAllStates();
-        _chickController.SetState(ChickState.Idle);
+        _gameController.SetChickState(ChickState.Idle);
     }
 }

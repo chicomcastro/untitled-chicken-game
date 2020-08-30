@@ -10,7 +10,7 @@ public class ExerciseWheelController : MonoBehaviour
     private bool _isExercising = false;
     private static readonly int IsExercising = Animator.StringToHash("isExercising");
 
-    [SerializeField] private ChickController _chickController;
+    [SerializeField] private GameController _gameController;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class ExerciseWheelController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        ToggleState();
+        _gameController.SetChickState(_isExercising ? ChickState.Idle : ChickState.Exercising);
     }
 
     public void ToggleState()
@@ -28,9 +28,6 @@ public class ExerciseWheelController : MonoBehaviour
         {
             return;
         }
-
-        var stateSet = _chickController.SetState(_isExercising ? ChickState.Idle : ChickState.Exercising);
-        if (!stateSet) return;
 
         _isExercising = !_isExercising;
         _animator.SetBool(IsExercising, _isExercising);

@@ -4,6 +4,7 @@ namespace DefaultNamespace
     {
         Idle = 0,
         Exercising = 1,
-        DrinkingWater = 2
+        DrinkingWater = 2,
+        Eating = 3
     }
 }

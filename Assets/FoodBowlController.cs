@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 
-public class WaterBowlController : MonoBehaviour
+public class FoodBowlController : MonoBehaviour
 {
-    private bool _isDrinkingWater = false;
+    private bool _isEatingFood = false;
 
     [SerializeField] private GameController _gameController;
 
     private void OnMouseUp()
     {
-        _gameController.SetChickState(_isDrinkingWater ? ChickState.Idle : ChickState.DrinkingWater);
+        _gameController.SetChickState(_isEatingFood ? ChickState.Idle : ChickState.Eating);
     }
 
     public void ToggleState()
     {
-        _isDrinkingWater = !_isDrinkingWater;
+        _isEatingFood = !_isEatingFood;
     }
 }

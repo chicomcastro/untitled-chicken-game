@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private ChickController _chickController;
     [SerializeField] private WaterBowlController _waterBowlController;
     [SerializeField] private ExerciseWheelController _exerciseWheelController;
+    [SerializeField] private FoodBowlController _foodBowlController;
 
     void Update()
     {
@@ -30,17 +31,26 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void ResetAllStates()
+    public void SetChickState(ChickState nextState)
     {
-        if (_chickController.ChickState == ChickState.Exercising)
+        ToggleCurrentState();
+        _chickController.SetState(nextState);
+        ToggleCurrentState();
+    }
+
+    public void ToggleCurrentState()
+    {
+        switch (_chickController.ChickState)
         {
-            _exerciseWheelController.ToggleState();
+            case ChickState.Exercising:
+                _exerciseWheelController.ToggleState();
+                return;
+            case ChickState.DrinkingWater:
+                _waterBowlController.ToggleState();
+                return;
+            case ChickState.Eating:
+                _foodBowlController.ToggleState();
+                return;
         }
-        
-        if (_chickController.ChickState == ChickState.DrinkingWater)
-        {
-            _waterBowlController.ToggleState();
-        }
-        
     }
 }

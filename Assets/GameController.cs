@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        if (_elapsed <= 10)
+        if (_elapsed <= 2)
         {
             _elapsed += Time.deltaTime;
         }

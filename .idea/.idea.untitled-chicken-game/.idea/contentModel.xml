@@ -20,6 +20,7 @@
         <e p="GameController.cs" t="Include" />
         <e p="MainScene" t="Include">
           <e p="Scripts" t="Include">
+            <e p="ShopButtonAnimationController.cs" t="Include" />
             <e p="ShopController.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
             <e p="ShopItemData.cs" t="Include" />

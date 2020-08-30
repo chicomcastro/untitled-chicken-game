@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0498d776d721944f883fc45efe30ea9, type: 3}
-  m_Name: WaterBowl
+  m_Name: BloodyBowl
   m_EditorClassIdentifier: 
-  Name: Himalayan spring water
-  NewSprite: {fileID: 21300000, guid: 26abd3659daee403e94e8c05dda3b9a6, type: 3}
+  Name: Bloody Bowl
+  NewSprite: {fileID: 96218839269469618, guid: 849e3c3e25cca40ceb3b362d6f06ba7d, type: 3}
   NewAnimation: {fileID: 0}
-  Price: 60
-  Tag: WaterBowl
+  Price: 120
+  Tag: FoodBowl

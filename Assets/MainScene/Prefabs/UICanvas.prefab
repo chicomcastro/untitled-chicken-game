@@ -649,6 +649,8 @@ MonoBehaviour:
   _items:
   - {fileID: 11400000, guid: 85e33a4f18d3e434db4449255f1e6177, type: 2}
   - {fileID: 11400000, guid: f00eb0b0fb9f4254fa140783b6d9a054, type: 2}
+  - {fileID: 11400000, guid: 00fe9a1a73616452eb3e06b19c697dd2, type: 2}
+  - {fileID: 11400000, guid: 2e7a1cc9569674c5ea1c0d1404738c8a, type: 2}
 --- !u!1001 &3959255440509250458
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class ChickController : MonoBehaviour
     [SerializeField] private GameObject _waterPosition;
     [SerializeField] private GameObject _wheelPosition;
     [SerializeField] private RuntimeAnimatorController _roosterAnimatorController;
+    [SerializeField] private  GameObject _evolveEffect;
 
     private void Start()
     {
@@ -70,5 +71,6 @@ public class ChickController : MonoBehaviour
                 break;
         }
         _animator.SetInteger(AnimatorState, (int) _chickState);
+        Instantiate(_evolveEffect, this.gameObject.transform.position, Quaternion.identity, this.transform);
     }
 }

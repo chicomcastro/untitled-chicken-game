@@ -33,8 +33,8 @@ RectTransform:
   m_Father: {fileID: 5632162005425014532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8036395474412060526}
-  - component: {fileID: 4799723887003934950}
+  - component: {fileID: 20716013856433827}
   m_Layer: 5
   m_Name: ShopList
   m_TagString: Untagged
@@ -225,12 +225,12 @@ RectTransform:
   m_Father: {fileID: 5632162005425014532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -80}
-  m_SizeDelta: {x: 300, y: 300}
-  m_Pivot: {x: 0, y: 1}
---- !u!114 &4799723887003934950
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &20716013856433827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1085049218395649930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -247,10 +247,10 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 10
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -481,8 +481,8 @@ RectTransform:
   m_Father: {fileID: 1112600427305544999}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
@@ -503,11 +503,11 @@ MonoBehaviour:
   _shopButton: {fileID: 5236560398191676989}
   _closeButton: {fileID: 1467657406746191758}
   _buttonAnimationController: {fileID: 7069766183662156337}
-  _shopItemPrefab: {fileID: 7229717465928925565, guid: 4f29ee35ec7bcf04cbe8d858b87ac07b,
+  _shopItemPrefab: {fileID: 5229812879754815217, guid: 36f914d329d10aa4d9fbf824d1cf3c39,
     type: 3}
   _items:
-  - {fileID: 11400000, guid: e7318da31aa78874793b94dae971b446, type: 2}
-  - {fileID: 11400000, guid: 2afc123a57ca633439bedcfa918ca2b6, type: 2}
+  - {fileID: 11400000, guid: 85e33a4f18d3e434db4449255f1e6177, type: 2}
+  - {fileID: 11400000, guid: f00eb0b0fb9f4254fa140783b6d9a054, type: 2}
 --- !u!1001 &3959255440509250458
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0498d776d721944f883fc45efe30ea9, type: 3}
-  m_Name: TestItem
+  m_Name: New Shop Item Data
   m_EditorClassIdentifier: 
-  Name: Testando
-  NewSprite: {fileID: 21300000, guid: 09b4aaf684b563c4e8ee693acb26c5f1, type: 3}
-  Price: 30
-  Tag: Background
+  Name: 
+  NewSprite: {fileID: 0}
+  Price: 0
+  Tag: 

@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] Text _nameSlot;
-    [SerializeField] Text _priceSlot;
+    [SerializeField] TMP_Text _nameSlot;
+    [SerializeField] Image _iconSlot;
+    [SerializeField] TMP_Text _priceSlot;
     Wallet _wallet;
     ShopItemData _item;
 
@@ -17,6 +19,7 @@ public class ShopItem : MonoBehaviour, IPointerClickHandler
         _item = item;
 
         _nameSlot.text = item.Name;
+        _iconSlot.sprite = item.NewSprite;
         _priceSlot.text = item.Price.ToString();
     }
 

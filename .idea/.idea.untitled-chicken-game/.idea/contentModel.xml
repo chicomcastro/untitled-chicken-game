@@ -20,6 +20,7 @@
         <e p="DataHolder.cs" t="Include" />
         <e p="FoodBowlController.cs" t="Include" />
         <e p="GameController.cs" t="Include" />
+        <e p="GameOverWindowController.cs" t="Include" />
         <e p="InitialMenuController.cs" t="Include" />
         <e p="MainScene" t="Include">
           <e p="Scripts" t="Include">

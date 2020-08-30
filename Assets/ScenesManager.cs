@@ -15,8 +15,15 @@ public class ScenesManager : MonoBehaviour
     }
     private void Start()
     {
-        Instance = this;
-        DontDestroyOnLoad(this);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void ChangeScene(string scene)

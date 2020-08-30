@@ -8,6 +8,8 @@ public class Wallet : MonoBehaviour
     [SerializeField] GameController _gameController;
     [SerializeField] int _initialAmount;
     int _amount;
+    private List<ShopItemData> _itemsBought = new List<ShopItemData>();
+    public List<ShopItemData> ItemsBought => _itemsBought;
 
     public int CurrentAmount => _amount;
     public Action<int> OnAmountChange;
@@ -24,6 +26,7 @@ public class Wallet : MonoBehaviour
 
         item.ApplyEffect();
         ProcessPurchase(item.Price);
+        _itemsBought.Add(item);
         return true;
     }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private FoodBowlController _foodBowlController;
     [SerializeField] private GameObject _watcher;
     [SerializeField] private NeedsController _needsController;
+    [SerializeField] private GameOverWindowController _gameOverWindow;
+    [SerializeField] private Wallet _wallet;
 
     private void Start()
     {
@@ -72,7 +75,7 @@ public class GameController : MonoBehaviour
     {
         if (_finished) return;
 
-        if (_elapsed > 150)
+        if (_elapsed > 100)
             WinGame();
     }
 
@@ -121,17 +124,28 @@ public class GameController : MonoBehaviour
 
     private void WinGame()
     {
+        if (_finished) return;
         _finished = true;
         foreach (ChickState state in Enum.GetValues(typeof(ChickState)))
             if (state != ChickState.Idle)
                 _score += 30 * _needsController.GetNeedValue(state);
 
+        if (_wallet.ItemsBought.Any((item) => item.Tag == "WaterBowl"))
+        {
+            _score = 0;
+        }
+        
+        _gameOverWindow.gameObject.SetActive(true);
+        _gameOverWindow.Setup(Convert.ToInt32(Math.Round(_score)), false);
         Debug.Log($"Win score: {_score}");
     }
 
     public void LoseGame()
     {
+        if (_finished) return;
         _finished = true;
-        Debug.Log("Lost");
+        _gameOverWindow.gameObject.SetActive(true);
+        _gameOverWindow.Setup(0, true);
+        Debug.Log($"Lost");
     }
 }

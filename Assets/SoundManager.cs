@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager Instance;
+    public static SoundManager Instance = null;
 
     [SerializeField] private AudioSource _musicPlayer;
     [SerializeField] private AudioSource _soundPlayer;
@@ -25,8 +25,15 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        Instance = this;
-        DontDestroyOnLoad(this);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetSong(AudioClip song)

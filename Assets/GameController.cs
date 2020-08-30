@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
@@ -35,6 +36,21 @@ public class GameController : MonoBehaviour
     {
         ToggleCurrentState();
         _chickController.SetState(nextState);
+        switch (nextState)
+        {
+            case ChickState.Idle:
+                SoundManager.Instance.StopSound();
+                break;
+            case ChickState.Exercising:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Clucking, loop: true);
+                break;
+            case ChickState.DrinkingWater:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Eating, loop: true);
+                break;
+            case ChickState.Eating:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Eating, loop: true);
+                break;
+        }
         ToggleCurrentState();
     }
 

@@ -417,9 +417,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1573870186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccb12cfb4ced5f24a9084085b02c6d11, type: 3}
+  m_Script: {fileID: 11500000, guid: 8796b166cba994e759e753595c674a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _forwardButton: {fileID: 1587715456}
 --- !u!1001 &1587715454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -556,7 +557,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1573870188}
+      objectReference: {fileID: 0}
     - target: {fileID: 9104561183620457895, guid: aff48c9e836d24ec9acd3b9e07849230,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -590,6 +591,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1587715454}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1587715456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9104561183620457895, guid: aff48c9e836d24ec9acd3b9e07849230,
+    type: 3}
+  m_PrefabInstance: {fileID: 1587715454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1894399519
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,8 +733,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Um dia voc\xEA ganha um pintinho de presente e desde entao ele passa a
-    ser seu melhor (e \xFAnico) amigo. Por isso voc\xEA tem toda vontade de am\xE1-lo
+  m_text: "Um dia voc\xEA ganha um pintinho de presente e desde ent\xE3o, ele passa
+    a ser seu melhor (e \xFAnico) amigo. Por isso, voc\xEA tem muita vontade de am\xE1-lo
     infinitamente na esperan\xE7a de preencher o vazio que sente na sua alma."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 366958ff1bc784fa79f3e5198ec34b8d, type: 2}

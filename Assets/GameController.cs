@@ -13,15 +13,49 @@ public class GameController : MonoBehaviour
     [SerializeField] private WaterBowlController _waterBowlController;
     [SerializeField] private ExerciseWheelController _exerciseWheelController;
     [SerializeField] private FoodBowlController _foodBowlController;
+    [SerializeField] private GameObject _watcher;
+
+    private void Start()
+    {
+        StartCoroutine(InterpolateWatcherIfNeeded());
+    }
 
     void Update()
+    {
+        EvolveIfNeeded();
+    }
+
+    private IEnumerator InterpolateWatcherIfNeeded()
+    {
+        var watcherStep = new Vector3(-0.02f, +0.02f);
+        while (gameObject != null)
+        {
+            yield return new WaitForSeconds(20);
+
+            for (int i = 0; i < 100; i++)
+            {
+                _watcher.transform.position += watcherStep;
+                yield return null;
+            }
+            
+            yield return new WaitForSeconds(2);
+            
+            for (int i = 0; i < 100; i++)
+            {
+                _watcher.transform.position -= watcherStep;
+                yield return null;
+            }
+        }
+    }
+
+    private void EvolveIfNeeded()
     {
         if (_evolved)
         {
             return;
         }
 
-        if (_elapsed <= 2)
+        if (_elapsed <= 90)
         {
             _elapsed += Time.deltaTime;
         }

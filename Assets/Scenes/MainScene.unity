@@ -890,6 +890,7 @@ MonoBehaviour:
   _exerciseWheelController: {fileID: 1383461632}
   _foodBowlController: {fileID: 1008312555}
   _watcher: {fileID: 1325981587}
+  _needsController: {fileID: 1995536767}
 --- !u!1 &1381826858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba801b8a59dd68b4db0bc4ba67591c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameController: {fileID: 1360953806}
   _initialAmount: 0
 --- !u!114 &1995536767
 MonoBehaviour:
@@ -1587,6 +1589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc32b95ccbcc8549ba369042750d94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameController: {fileID: 1360953806}
   _chickController: {fileID: 1995536765}
   initialValue: 0.9
   decaySpeed: 0.05

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class WaterBowlController : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class WaterBowlController : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
         _gameController.SetChickState(_isDrinkingWater ? ChickState.Idle : ChickState.DrinkingWater);
     }
 

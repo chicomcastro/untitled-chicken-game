@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ExerciseWheelController : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class ExerciseWheelController : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
         _gameController.SetChickState(_isExercising ? ChickState.Idle : ChickState.Exercising);
     }
 

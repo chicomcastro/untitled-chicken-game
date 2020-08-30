@@ -8,12 +8,15 @@ public class ShopController : MonoBehaviour
     [SerializeField] Wallet _wallet;
     [SerializeField] GameObject _shopRoot;
     [SerializeField] Button _shopButton;
+    [SerializeField] Button _closeButton;
+    [SerializeField] ShopButtonAnimationController _buttonAnimationController;
     [SerializeField] ShopItem _shopItemPrefab;
     [SerializeField] List<ShopItemData> _items;
 
     private void Awake()
     {
         _shopButton.onClick.AddListener(OpenShop);
+        _closeButton.onClick.AddListener(CloseShop);
 
         foreach (ShopItemData item in _items)
         {
@@ -24,13 +27,13 @@ public class ShopController : MonoBehaviour
 
     void OpenShop()
     {
-        _shopButton.gameObject.SetActive(false);
+        StartCoroutine(_buttonAnimationController.StartAnimation(ShopStateAction.Open));
         _shopRoot.gameObject.SetActive(true);
     }
 
     void CloseShop()
     {
-        _shopButton.gameObject.SetActive(true);
+        StartCoroutine(_buttonAnimationController.StartAnimation(ShopStateAction.Close));
         _shopRoot.gameObject.SetActive(false);
     }
 }

@@ -8,21 +8,27 @@ public class GameController : MonoBehaviour
 {
     private float _elapsed = 0.0f;
     private bool _evolved = false;
+    private bool _finished = false;
+    private float _score = 0;
 
     [SerializeField] private ChickController _chickController;
     [SerializeField] private WaterBowlController _waterBowlController;
     [SerializeField] private ExerciseWheelController _exerciseWheelController;
     [SerializeField] private FoodBowlController _foodBowlController;
     [SerializeField] private GameObject _watcher;
+    [SerializeField] private NeedsController _needsController;
 
     private void Start()
     {
         StartCoroutine(InterpolateWatcherIfNeeded());
+        _score = 0;
     }
 
     void Update()
     {
+        _elapsed += Time.deltaTime;
         EvolveIfNeeded();
+        FinishGameIfNeeded();
     }
 
     private IEnumerator InterpolateWatcherIfNeeded()
@@ -55,15 +61,19 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        if (_elapsed <= 90)
-        {
-            _elapsed += Time.deltaTime;
-        }
-        else
+        if (_elapsed > 90)
         {
             _chickController.Evolve();
             _evolved = true;
         }
+    }
+
+    private void FinishGameIfNeeded()
+    {
+        if (_finished) return;
+
+        if (_elapsed > 150)
+            WinGame();
     }
 
     public void SetChickState(ChickState nextState)
@@ -102,5 +112,26 @@ public class GameController : MonoBehaviour
                 _foodBowlController.ToggleState();
                 return;
         }
+    }
+
+    public void IncreaseScore(float bonus)
+    {
+        _score += bonus;
+    }
+
+    private void WinGame()
+    {
+        _finished = true;
+        foreach (ChickState state in Enum.GetValues(typeof(ChickState)))
+            if (state != ChickState.Idle)
+                _score += 30 * _needsController.GetNeedValue(state);
+
+        Debug.Log($"Win score: {_score}");
+    }
+
+    public void LoseGame()
+    {
+        _finished = true;
+        Debug.Log("Lost");
     }
 }

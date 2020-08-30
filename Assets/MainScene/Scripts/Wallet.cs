@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
+    [SerializeField] GameController _gameController;
     [SerializeField] int _initialAmount;
     int _amount;
 
@@ -30,6 +31,7 @@ public class Wallet : MonoBehaviour
     {
         _amount -= value;
         OnAmountChange?.Invoke(_amount);
+        _gameController.IncreaseScore(value);
     }
 
     private IEnumerator StartDefaultIncome()

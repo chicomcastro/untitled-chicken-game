@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField] private AudioSource _musicPlayer;
     [SerializeField] private AudioSource _soundPlayer;
+    [SerializeField] private AudioSource _clickPlayer;
 
     public AudioClip LofiN1;
     public AudioClip LofiN3;
@@ -46,5 +47,11 @@ public class SoundManager : MonoBehaviour
     public void StopSound()
     {
         _soundPlayer.Stop();
+    }
+
+    public void PlayClick()
+    {
+        _clickPlayer.clip = ChickenOSClick;
+        _clickPlayer.Play();
     }
 }

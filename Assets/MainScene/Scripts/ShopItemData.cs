@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -19,7 +20,28 @@ public class ShopItemData : ScriptableObject
 
         if (NewAnimation != null)
         {
-            go.GetComponent<Animator>().runtimeAnimatorController = NewAnimation;
+            var currentAnimator = go.GetComponent<Animator>();
+            var currentAnimatorProperties = currentAnimator.parameters;
+            currentAnimator.runtimeAnimatorController = NewAnimation;
+            for (int i = 0; i < currentAnimatorProperties.Length; i++)
+            {
+                var hash = currentAnimatorProperties[i].nameHash;
+                switch (currentAnimatorProperties[i].type)
+                {
+                    case AnimatorControllerParameterType.Float:
+                        currentAnimator.SetFloat(hash, currentAnimatorProperties[i].defaultFloat);
+                        break;
+                    case AnimatorControllerParameterType.Int:
+                        currentAnimator.SetInteger(hash, currentAnimatorProperties[i].defaultInt);
+                        break;
+                    case AnimatorControllerParameterType.Bool:
+                        currentAnimator.SetBool(hash, currentAnimatorProperties[i].defaultBool);
+                        break;
+                    case AnimatorControllerParameterType.Trigger:
+                        currentAnimator.SetTrigger(hash);
+                        break;
+                }
+            }
         }
     }
 }

@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="ChickBedController.cs" t="Include" />
+        <e p="ClickListener.cs" t="Include" />
         <e p="Common" t="Include">
           <e p="Scripts" t="Include">
             <e p="Highlight.cs" t="Include" />

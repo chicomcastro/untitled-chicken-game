@@ -10,14 +10,9 @@ public class ShopItemData : ScriptableObject
     public int Price;
     public string Tag;
 
-    public bool TryToBuy(Wallet wallet)
+    public void ApplyEffect()
     {
-        if (wallet.CurrentAmount < Price) return false;
-
         GameObject go = GameObject.FindWithTag(Tag);
         go.GetComponent<SpriteRenderer>().sprite = NewSprite;
-
-        wallet.ProcessPurchase(Price);
-        return true;
     }
 }

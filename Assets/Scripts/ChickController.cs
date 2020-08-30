@@ -57,6 +57,8 @@ public class ChickController : MonoBehaviour
     {
         _animator.runtimeAnimatorController = _roosterAnimatorController;
         _wheelPosition.transform.position += new Vector3(0.15f, 0.23f);
+        _foodPosition.transform.position += new Vector3(0.65f, 0);
+        _waterPosition.transform.position += new Vector3(0.65f, 0);
         SetState(_chickState);
         Instantiate(_evolveEffect, this.gameObject.transform.position, Quaternion.identity, this.transform);
     }

@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class NeedsController : MonoBehaviour
 {
+    [SerializeField] GameController _gameController;
     [SerializeField] ChickController _chickController;
     [SerializeField] float initialValue;
     [SerializeField] float decaySpeed;
     [SerializeField] float recoverySpeed;
 
     Dictionary<ChickState, float> _needs = new Dictionary<ChickState, float>();
+    bool _isRunning = true;
 
     public float GetNeedValue(ChickState need)
     {
@@ -31,9 +33,11 @@ public class NeedsController : MonoBehaviour
 
     private void Update()
     {
+        if (!_isRunning) return;
+
         foreach (ChickState state in Enum.GetValues(typeof(ChickState)))
         {
-            if (state == ChickState.Idle) continue;
+            if (state == ChickState.Idle || !_isRunning) continue;
 
             if (state == _chickController.ChickState)
             {
@@ -50,5 +54,10 @@ public class NeedsController : MonoBehaviour
     {
         _needs[state] += delta;
         _needs[state] = Mathf.Clamp01(_needs[state]);
+        if (_needs[state] == 0)
+        {
+            _gameController.LoseGame();
+            _isRunning = false;
+        }    
     }
 }

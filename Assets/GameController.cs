@@ -69,4 +69,14 @@ public class GameController : MonoBehaviour
                 return;
         }
     }
+
+    private void WinGame()
+    {
+
+    }
+
+    public void LoseGame()
+    {
+
+    }
 }

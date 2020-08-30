@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Background
+  - WaterBowl
+  - FoodBowl
+  - Wheel
+  - Couch
   layers:
   - Default
   - TransparentFX
